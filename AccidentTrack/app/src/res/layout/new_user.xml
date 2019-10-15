@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/new_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="eighteen.cmp.mani.personalsecurity.NewUser">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="30dp"
+        android:background="#ffccdd"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:typeface="serif"
+            android:layout_marginTop="0dp"
+            android:text="New User Register" />
+
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xlabel"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+
+            android:layout_marginTop="44dp"
+            android:hint="Name"
+            android:background="#ff3377"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText1"
+            android:layout_below="@+id/ylabel"
+            android:padding="10dp"
+            android:layout_marginTop="39dp"
+            android:layout_margin="10dp"
+            android:hint="Mobile Number"
+            android:background="#ff3377"
+            android:ems="10"
+            android:inputType="phone" />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff3377"
+            android:layout_margin="10dp"
+            android:layout_marginTop="48dp"
+            android:layout_toRightOf="@+id/xlabel"
+            android:text="Register"
+            android:onClick="Registeron_db"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

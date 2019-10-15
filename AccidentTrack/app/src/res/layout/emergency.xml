@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/emergency"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5c5656"
+    tools:context="eighteen.cmp.mani.personalsecurity.Emergency">
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#465468" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Emergency Users Details"
+            android:fontFamily="cursive"
+            android:textStyle="bold"
+            android:textSize="23dp"
+            android:textColor="#ffffff"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignRight="@+id/button1"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="36dp"
+        android:background="#793b5d"
+        android:onClick="viewusers"
+        android:textColor="@color/colorAccent"
+        android:elevation="5dp"
+        android:text="View Users" />
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignRight="@+id/button3"
+        android:layout_below="@+id/button3"
+        android:layout_marginTop="32dp"
+        android:onClick="deletetable"
+        android:background="#793b5d"
+        android:textColor="@color/colorAccent"
+        android:text="Delete  User" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:textColor="@color/colorAccent"
+        android:background="#793b5d"
+        android:onClick="newusers"
+
+        android:text="New User" />
+
+</RelativeLayout>

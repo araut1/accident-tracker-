@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@drawable/onee"
+    tools:context="eighteen.cmp.mani.personalsecurity.Dashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#29ffffff"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="30dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="106dp"
+                    android:gravity="center"
+                    android:fontFamily="cursive"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:textSize="29dp"
+                    android:text="Dashboard" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical"
+                    android:id="@+id/addtask"
+                    android:background="@drawable/cat_deisgn"
+
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/addtask"
+                        android:padding="15dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Emergency Users"
+                        android:gravity="center"
+                        android:fontFamily="cursive"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+
+                        android:background="@drawable/cat_deisgn"
+                        android:textSize="25dp"
+                        android:layout_weight="1.5"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1.2"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:id="@+id/viewtask"
+                    android:background="@drawable/cat_deisgn"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/viewtask"
+                        android:padding="15dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Accident Detection"
+                        android:gravity="center"
+                        android:fontFamily="cursive"
+
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+                        android:background="@drawable/cat_deisgn"
+                        android:textSize="22dp"
+                        android:layout_weight="1.5"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1.3"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

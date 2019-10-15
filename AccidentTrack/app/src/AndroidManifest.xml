@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="eighteen.cmp.mani.personalsecurity">
+
+    <!--
+        <permission
+        android:name="com.example.accidentdetection.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    -->
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Transparent">
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Register" />
+        <activity android:name=".Login" />
+        <activity android:name=".Emergency" />
+        <activity android:name=".ViewUser" />
+        <activity android:name=".NewUser" />
+        <activity android:name=".AccidentDetection" />
+        <activity android:name=".Dashboard" />
+
+        <service android:name=".Accelarometerservice" />
+
+        <activity android:name=".DeleteUser"></activity>
+    </application>
+
+</manifest>
